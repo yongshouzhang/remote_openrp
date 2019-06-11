@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(method="post" action="/authenticate")
+    div(style="padding:10px;")
+      input(type="text" name="username")
+    div(style="padding:10px;")
+      button(type="submit") 登录
